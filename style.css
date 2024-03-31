@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #04004b;
+}
+.container{
+    max-height: 90vh;
+    width: 39%;
+    background-color: #fff;
+    border: 1p solid #fff;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+}
+.container h1{
+    margin-left: 4%;
+    margin-top: 5%;
+    color: #04004b;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.border{
+    width: 90%;
+    margin-left:4%;
+    border: 1px solid #04004b;
+}
+button{
+    height: 8vh;
+    width: 90%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 3%;
+}
+#question{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#option-1{
+    margin-top: 5%;
+}
+#next{
+    height: 6vh;
+    width: 30%;
+    background-color:#04004b;
+    color: #fff;
+    margin-left: 34%;
+    display: none;
+    padding-right: 3.5%;
+}
+#score{
+    margin: 5vh;
+    display: none;
+    
+}
+
+@media (max-width:1280px) {
+    .container{
+        width: 60%;
+    }
+}
+@media (max-width:900px) {
+    .container{
+        width: 70%;
+    }
+}
+@media (max-width:600px) {
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width:450px) {
+    .container{
+        width: 90%;
+        margin-top: 30%;
+    }
+    .container h1{
+        font-size:1.4rem;
+    }
+    #question{
+        font-size: 1.3rem;
+    }
+}
